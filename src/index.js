@@ -7,10 +7,15 @@ export default function App() {
   const [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    api.get('projects').then((response) => {
-      console.log(response.data);
-      setProjects(response.data);
-    });
+    api.get('projects')
+      .then((response) => {
+        console.log(response.data);
+        setProjects(response.data);
+      })
+      .catch((error) => {
+        console.log(error);
+        console.log(error.stack);
+      });
   }, []);
 
   return (
