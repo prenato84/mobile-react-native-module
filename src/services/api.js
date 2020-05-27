@@ -1,8 +1,8 @@
 import axios from 'axios';
 
-// http://192.168.0.6:3333
+// If using emulator, change address to http://localhost:3333
 const api = axios.create({
-  baseURL: 'http://localhost:3333',
+  baseURL: 'http://192.168.0.6:3333',
 });
 
 export default api;
