@@ -28,8 +28,8 @@ export default function App() {
 
   async function handleAddProject() {
     const response = await api.post('projects', {
-      title: `Novo Projeto ${Date.now()}`,
-      owner: 'Paulo Renato',
+      title: `New Project ${Date.now()}`,
+      owner: 'Owner Name',
     });
 
     const project = response.data;
