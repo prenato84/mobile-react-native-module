@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
 
   project: {
     color: '#FFF',
-    fontSize: 26,
+    fontSize: 22,
   },
 
   button: {

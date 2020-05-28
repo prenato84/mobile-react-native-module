@@ -1,8 +1,9 @@
 import axios from 'axios';
 
-// If using emulator, change address to http://localhost:3333
+// If using real device, change address to http://MACHINE_LOCAL_IP:3333
+// Example: http://192.168.0.10:3333
 const api = axios.create({
-  baseURL: 'http://192.168.0.6:3333',
+  baseURL: 'http://localhost:3333',
 });
 
 export default api;
