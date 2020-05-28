@@ -78,21 +78,13 @@ Notes:
 
 ### :bookmark_tabs: API Description
 
-Getting the projects list (GET Method at the URL)
+- **`GET /projects`**: lists all the projects stored in memory.
 
-> http://localhost:3333/projects
+- **`POST /projects`**: expects to receive an object with `title` and `owner` inside the request body. The created project is stored inside an object like: `{ id: "uuid", title: 'Node.js Project', owner: 'Owner Name'`; The ID is an UUID - Universal Unique Identifier.
 
-    It returns the total count of projects (X-Total-Count) inside the Http Header
+- **`PUT /projects/:id`**: expects to receive an object with `title` and `owner` inside the request body and it changes the project info based on the `id` passed as a request param.
 
-Adding a project (POST Method at the URL)
-
-> http://localhost:3333/projects
-
-    The JSON Object:
-    {
-      title: `New Project ${Date.now()}`,
-      owner: 'Owner Name',
-    }
+- **`DELETE /projects/:id`**: deletes the project that corresponds to the `id` passed as a request param.
 
 ### :man_technologist: Requirements
 
