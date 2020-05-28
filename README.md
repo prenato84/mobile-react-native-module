@@ -2,7 +2,7 @@
 
 A simple project to practice the main concepts of React Native.
 
-It uses a RESTFull API provided by a backend made with Node.js: **[Conceitos do Node.js](https://github.com/prenato84/conceitos-nodejs)**.
+It uses a RESTFull API provided by a backend made with Node.js: **[Backend with Node.js](https://github.com/prenato84/backend-node-module)**.
 
 This frontend has a button for adding projects directly into the backend.
 
@@ -19,7 +19,7 @@ Some key React JS and React Native concepts:
 
 ### :keyboard: Installation and Execution
 
-As this project is only the frontend of the application, it is necessary to install and run the backend project first following the instructions at its own repo: **[Conceitos do Node.js](https://github.com/prenato84/conceitos-nodejs)**.
+As this project is only the frontend of the application, it is necessary to install and run the backend project first following the instructions at its own repo: **[Backend with Node.js](https://github.com/prenato84/backend-node-module)**.
 
 With the backend started, now the frontend will be able to make the API's calls.
 
